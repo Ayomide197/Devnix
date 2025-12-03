@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Devnix | Full-Stack Developer & Freelancer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Devnix <img src="./images/devnic-logo.png" alt="devnic-logo" class="devnic-logo"></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#flash-sales" class="nav-link">Flash Sales</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">Full-Stack Developer</div>
+            <h1 class="hero-title">
+                Hi, I'm <span class="gradient-text">Ayomide Emmanuel</span>
+            </h1>
+            <p class="hero-subtitle">
+                Founder of <strong>Devnix</strong> crafting premium digital experiences through clean code and innovative solutions. I transform ideas into powerful, scalable applications.
+            </p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/2348154386607?text=Hi%20Devnix!%20I%20checked%20out%20your%20portfolio.%20I%20have%20a%20project%20in%20mind%20and%20would%20like%20to%20work%20with%20you." class="btn btn-primary" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    Hire Me
+                </a>
+                <a href="#portfolio" class="btn btn-secondary">View My Work</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-card">
+                <div class="card-glow"></div>
+                <div class="code-window">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="code-body">
+                        <code>
+                            <span class="code-keyword">const</span> <span class="code-variable">developer</span> = {<br>
+                            &nbsp;&nbsp;<span class="code-property">name</span>: <span class="code-string">"Ayomide"</span>,<br>
+                            &nbsp;&nbsp;<span class="code-property">role</span>: <span class="code-string">"Full-Stack"</span>,<br>
+                            &nbsp;&nbsp;<span class="code-property">passion</span>: <span class="code-string">"Building"</span>,<br>
+                            &nbsp;&nbsp;<span class="code-property">available</span>: <span class="code-boolean">true</span><br>
+                            };
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">What I Do</span>
+                <h2 class="section-title">Services</h2>
+                <p class="section-subtitle">Premium solutions tailored to elevate your digital presence</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Full-Stack Development</h3>
+                    <p>End-to-end web applications built with modern technologies. From responsive frontends to robust backend systems.</p>
+                    <ul class="service-features">
+                        <li>React, Next.js, Vue</li>
+                        <li>Node.js, Python, PHP</li>
+                        <li>Database Design</li>
+                        <li>API Development</li>
+                    </ul>
+                </div>
+                <div class="service-card featured">
+                    <div class="featured-badge">Popular</div>
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3>Freelancing Solutions</h3>
+                    <p>Flexible, project-based development for startups and businesses. Get quality work delivered on time and budget.</p>
+                    <ul class="service-features">
+                        <li>MVP Development</li>
+                        <li>Website Redesign</li>
+                        <li>Bug Fixes & Updates</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3>Custom Code Projects</h3>
+                    <p>Bespoke software solutions designed specifically for your unique business needs and workflows.</p>
+                    <ul class="service-features">
+                        <li>Custom Web Apps</li>
+                        <li>Automation Scripts</li>
+                        <li>Integration Solutions</li>
+                        <li>Technical Consulting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flash Sales Section -->
+    <section id="flash-sales" class="flash-sales">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge sale-badge">🔥 Limited Time</span>
+                <h2 class="section-title">Flash Sales</h2>
+                <p class="section-subtitle">Exclusive deals you don't want to miss</p>
+            </div>
+            <div class="sales-grid">
+                <div class="sale-card">
+                    <div class="sale-ribbon">HOT DEAL</div>
+                    <div class="sale-header">
+                        <span class="sale-tag">Weekend Special</span>
+                        <h3>Full Custom Code</h3>
+                        <p class="sale-description">Complete custom-coded website or web application built from scratch to your specifications</p>
+                    </div>
+                    <div class="sale-pricing">
+                        <div class="price-range">
+                            <span class="currency">₦</span>
+                            <span class="amount">50,000</span>
+                            <span class="separator">–</span>
+                            <span class="currency">₦</span>
+                            <span class="amount">75,000</span>
+                        </div>
+                        <span class="price-note">Based on project scope</span>
+                    </div>
+                    <ul class="sale-includes">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Custom Design & Development
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Mobile Responsive
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            SEO Optimized
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Free Revisions
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/2348154386607?text=Hi%20Devnix!%20I'm%20interested%20in%20the%20Weekend%20Full%20Custom%20Code%20Flash%20Sale" class="btn btn-sale" target="_blank">
+                        Claim This Deal
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+                <div class="sale-card">
+                    <div class="sale-ribbon accent">BEST VALUE</div>
+                    <div class="sale-header">
+                        <span class="sale-tag">Business Essential</span>
+                        <h3>Full Business Branding</h3>
+                        <p class="sale-description">Complete brand identity package to establish your professional business presence</p>
+                    </div>
+                    <div class="sale-pricing">
+                        <div class="price-single">
+                            <span class="currency">₦</span>
+                            <span class="amount">15,000</span>
+                        </div>
+                        <span class="price-note">One-time payment</span>
+                    </div>
+                    <ul class="sale-includes">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Logo Design
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Brand Color Palette
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Business Card Design
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Social Media Kit
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/2348154386607?text=Hi%20Devnix!%20I'm%20interested%20in%20the%20Full%20Business%20Branding%20Flash%20Sale" class="btn btn-sale" target="_blank">
+                        Claim This Deal
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">My Work</span>
+                <h2 class="section-title">Portfolio</h2>
+                <p class="section-subtitle">A showcase of projects I've brought to life</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+
+                    <div class="portfolio-image">
+                    <img src="./images/Travel-App-Landing-Page.PNG" alt="Travel-App-Landing-Page-image" class="portfolio-img">
+                    </div>
+
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Web Application</span>
+                        <h3>Travel App Landing Page</h3>
+                        <p>A clean and responsive landing page designed to showcase a travel app’s key features, attract users, and encourage downloads.</p>
+                        <div class="portfolio-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Javascript</span>
+                            <span>React.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                    <img src="./images/Hotel-Booking-App.jpg" alt="Hotel-Booking-App" class="portfolio-img">
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Mobile App</span>
+                        <h3>Hotel Booking App</h3>
+                        <p>A modern hotel booking app that allows users to search, compare, and reserve rooms with ease.</p>
+                        <div class="portfolio-tags">
+                            <span>Dart</span>
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                    <img src="./images/Men-clothes-store.jpg" alt="Men-clothes-store" class="portfolio-img">
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Mobile App</span>
+                        <h3>Men clothes store</h3>
+                        <p>A modern men’s clothing store offering stylish, high-quality outfits for every occasion.</p>
+                        <div class="portfolio-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Javascript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                    <img src="./images/AI-Smart-Healthcare-App-Frontend.jpg" alt="AI-Smart-Healthcare-App-Frontend" class="portfolio-img">
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Mobile App</span>
+                        <h3>AI Smart Healthcare App Frontend</h3>
+                        <p>AI Smart Healthcare App Frontend is an intuitive interface for managing appointments, accessing medical records, and receiving AI-driven health insights</p>
+                        <div class="portfolio-tags">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+                <p class="section-subtitle">Let's discuss your next project</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>Have a project in mind? I'd love to hear about it. Reach out through WhatsApp for a quick response, or send me an email.</p>
+                    <a href="https://wa.me/2348154386607?text=Hi%20Devnix!%20I%20saw%20your%20flash%20sale%20on%20your%20website.%20I%20want%20to%20claim%20one%20of%20the%20deals.%20Please%20give%20me%20more%20details.
+" class="btn btn-whatsapp" target="_blank">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        Chat on WhatsApp
+                    </a>
+                    <div class="contact-divider">
+                        <span>or</span>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>devnixglobal@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form action="https://formsubmit.co/5662edf0982e99472adb83181e78b76e" method="POST" class="contact-form" id="contactForm">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_subject" value="New Contact from Devnix Portfolio">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="">
+                        <input type="text" name="_honey" style="display:none">
+                        
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit">
+                            <span>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">Devnix</span>
+                    <p>Building digital excellence, one project at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Devnix. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+            </div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out. I'll get back to you soon.</p>
+            <button class="btn btn-primary" onclick="closeModal()">Got it</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
